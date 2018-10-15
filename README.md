@@ -9,7 +9,7 @@
 
 ## Overview 
 
-This project uses the Ask Kodiak Node.js SDK to export product from Ask Kodiak as a CSV file. The resultant file is saved as `output.csv`. 
+This project uses the Ask Kodiak Node.js SDK to export eligibility for a specified product from Ask Kodiak as a CSV file. The resultant file is saved as `output.csv`. 
 
 It is an example of how to use the Ask Kodiak Node.js SDK in a project.
 
