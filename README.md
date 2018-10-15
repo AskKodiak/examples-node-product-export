@@ -9,7 +9,7 @@
 
 ## Overview 
 
-This project uses the Ask Kodiak Node.js SDK to export eligibility for a specified product from Ask Kodiak as a CSV file. The resultant file is saved as `output.csv`. 
+This project uses the Ask Kodiak Node.js SDK to export eligibility for a specified product from Ask Kodiak as a CSV file. The resultant file is saved to disk. 
 
 It is an example of how to use the Ask Kodiak Node.js SDK in a project.
 
@@ -27,6 +27,8 @@ node export-product.js --gid="yourGroupId" --key="yourAPIKey" --pid="aProductId"
 
 ```
 
+The results can be found in the file `output.csv`.
+
 Create a CSV with the product's eligibility at the 6-digit ('national-industry') NAICS level including any conditional content that applies to each code or any code in it's ancestry.
 
 ```bash
@@ -34,6 +36,8 @@ Create a CSV with the product's eligibility at the 6-digit ('national-industry')
 node export-product-with-inclusions.js --gid="yourGroupId" --key="yourAPIKey" --pid="aProductId"
 
 ```
+
+The results can be found in the file `output-with-inclusions.csv`.
 
 ## Contributing
 
