@@ -14,11 +14,11 @@ Start by taking a look at `export-product.js` to see the details of the implemen
 
 To run this example, you will neeed:
 
-  * [Node.js](https://nodejs.org/en/)version 6.0 or greater
+  * [Node.js](https://nodejs.org/en/) version 6.0 or greater
   * [npm](https://www.npmjs.com/get-npm)
 
 ## Installation
-
+ 
 Fork the repository. In the project directory, run:
 
 ``` 
