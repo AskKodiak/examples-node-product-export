@@ -1,6 +1,6 @@
 {
   "name": "examples-node-product-export",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "an example project that uses the Ask Kodiak Node.js SDK to export a product as a CSV. ",
   "main": "export-product.js",
   "scripts": {

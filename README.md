@@ -13,13 +13,25 @@ This project uses the Ask Kodiak Node.js SDK to export eligibility for a specifi
 
 It is an example of how to use the Ask Kodiak Node.js SDK in a project.
 
-Take a look at `export-product.js` to see the details of the implementation.
+Start by taking a look at `export-product.js` to see the details of the implementation. It calls the Ask Kodiak API for eligibility for a given product at the NAICS 'national-industry' level, then calls the Ask Kodiak API for a list of all NAICS national industry codes, and then builds a CSV representing the product's eligibility for all codes and writes it to disk. 
+
+`export-product-with-inclusions` builds on that example by including additional columns in the spreadsheet that describe included notes, highlights, guidelines or collateral for a given NAICS group or any group in it's ancestry.
 
 ## Basic Usage
+
+Create a CSV with the product's eligibility at the 6-digit ('national-industry') NAICS level.
 
 ```bash
 
 node export-product.js --gid="yourGroupId" --key="yourAPIKey" --pid="aProductId"
+
+```
+
+Create a CSV with the product's eligibility at the 6-digit ('national-industry') NAICS level including any conditional content that applies to each code or any code in it's ancestry.
+
+```bash
+
+node export-product-with-inclusions.js --gid="yourGroupId" --key="yourAPIKey" --pid="aProductId"
 
 ```
 
