@@ -19,11 +19,10 @@ To run this example, you will neeed:
 
 ## Installation
  
-Fork the repository. In the project directory, run:
+Clone the repository. In the project directory, run:
 
 ``` 
 npm install
-
 ```
 
 ## Basic Usage
