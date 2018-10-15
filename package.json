@@ -1,0 +1,37 @@
+{
+  "name": "examples-node-product-export",
+  "version": "1.0.0",
+  "description": "an example project that uses the Ask Kodiak Node.js SDK to export a product as a CSV. ",
+  "main": "export-product.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AskKodiak/examples-node-product-export.git"
+  },
+  "keywords": [
+    "insurtech",
+    "insurance",
+    "ask",
+    "kodiak",
+    "naics",
+    "sic",
+    "commerical",
+    "lines",
+    "appetite"
+  ],
+  "author": "mike@askkodiak.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AskKodiak/examples-node-product-export/issues"
+  },
+  "homepage": "https://github.com/AskKodiak/examples-node-product-export#readme",
+  "dependencies": {
+    "ask-kodiak-sdk": "^1.0.0",
+    "csv-write-stream": "^2.0.0",
+    "json2csv": "^4.2.1",
+    "jsonfile": "^5.0.0",
+    "yargs": "^12.0.2"
+  }
+}
