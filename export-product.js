@@ -20,10 +20,6 @@ if (!argv.pid) {
   console.log('a product id (pid) is required.');
   process.exit();
 }
-if (argv.env) {
-  console.log('a product id (pid) is required.');
-  process.exit();
-}
 
 // does the work of turning the data into a CSV once it's an array of rows
 function rows2csv(rows) {
@@ -35,7 +31,7 @@ function rows2csv(rows) {
 }
 
 // init the Ask Kodiak SDK with the keys provided.
-AskKodiak.init(argv.gid, argv.key, 'http://localhost:8080/v1');
+AskKodiak.init(argv.gid, argv.key);
 
 AskKodiak.getEligibilityByNaicsGroupType(argv.pid, precision).then(function (eligibility) {
   AskKodiak.getNaicsSummaryForGroupType(precision).then(function (naicsTypeSummary) {
