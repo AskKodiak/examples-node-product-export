@@ -34,6 +34,9 @@ function rows2csv(rows) {
 AskKodiak.init(argv.gid, argv.key);
 
 AskKodiak.getEligibilityByNaicsGroupType(argv.pid, precision).then(function (eligibility) {
+  // default eligibility as an empty object just in case there is none for the product.
+  eligibility = eligibility || {};
+
   AskKodiak.getNaicsSummaryForGroupType(precision).then(function (naicsTypeSummary) {
     var codes = Object.keys(naicsTypeSummary),
         rows = [];
