@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/AskKodiak/examples-node-product-export#readme",
   "dependencies": {
-    "ask-kodiak-sdk": "^1.0.0",
+    "ask-kodiak-sdk": "^1.0.1",
     "csv-write-stream": "^2.0.0",
     "json2csv": "^4.2.1",
     "jsonfile": "^5.0.0",
