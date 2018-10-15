@@ -6,11 +6,14 @@
  * [Basic Usage](#basic-usage) 
  * [Contributing](#contributing)
  * [Supported Enviornments](#supported-environments) 
- * [Documentation](#documentation)
 
 ## Overview 
 
-This project uses the Ask Kodiak Node.js SDK to export product from Ask Kodiak as a CSV file. The results are echoed into the console, and you can copy and paste them into excel or your favorite spreadsheet program.
+This project uses the Ask Kodiak Node.js SDK to export product from Ask Kodiak as a CSV file. The resultant file is saved as `output.csv`. 
+
+It is an example of how to use the Ask Kodiak Node.js SDK in a project.
+
+Take a look at `export-product.js` to see the details of the implementation.
 
 ## Basic Usage
 
@@ -30,6 +33,3 @@ requests, code review feedback, and also pull requests.
 
 The Ask Kodiak Node.js SDK supports Node.js version 6.0 and higher.
 
-## Documentation 
-
-TODO
